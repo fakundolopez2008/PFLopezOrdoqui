@@ -56,15 +56,16 @@ footer {
 /* ------------------------------------------------------------------------------- */
 
 h1 {
-  text-align: center;
   padding-top: 10px;
   font-size: 50px;
+  grid-column: 2/3;
+  grid-row: 1;
 }
 
 h2 {
   font-size: 35px;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -133,6 +134,7 @@ td {
   height: 100%;
   font-size: 13px;
   text-align: center;
+  align-items: center;
   left: 0px;
 }
 /* ----------------------------------------Class----------------------------------- */
@@ -178,9 +180,11 @@ td {
 }
 
 .imagenTraza {
-  width: 15%;
+  width: 30%;
   height: 90%;
   margin: 5px;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .imgPie1 {
@@ -229,6 +233,13 @@ td {
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+}
+
+.prueba {
+  max-width: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 /* -----------------------------------------ID's----------------------------------- */
 
