@@ -11,9 +11,7 @@
 }
 
 /* ---------------------------------Estructuras Basicas--------------------------- */
-
 html {
-  height: auto;
   width: 100%;
 }
 
@@ -24,7 +22,6 @@ header {
 }
 
 body {
-  height: auto;
   width: 100%;
   background-color: #2c3333;
 }
@@ -36,7 +33,6 @@ nav {
   margin: 0 auto;
   position: sticky;
   top: 0;
-  z-index: 11;
 }
 
 main {
@@ -246,10 +242,12 @@ td {
 }
 
 .carousel-item img {
-  height: 400px;
-  object-fit: fill;
+  height: 600px;
+  object-fit: contain;
   width: 70%;
   padding: 50px;
+  border-style: solid;
+  background-color: #0e8488;
 }
 
 .carousel-caption {
@@ -268,6 +266,13 @@ td {
 
 .carousel-control-prev {
   left: 10px;
+}
+
+.prueba2{
+  display: flex;
+}
+.prueba3{
+  display: flex;
 }
 /* -----------------------------------------ID's----------------------------------- */
 
