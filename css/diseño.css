@@ -39,7 +39,7 @@ nav {
 
 main {
   background-color: #cbe4de;
-  height: 80vh;
+  height: 90vh;
   width: 60%;
   margin: 0px auto;
 }
@@ -48,8 +48,6 @@ footer {
   background-color: #0e8388;
   width: 100%;
   height: 80px;
-  position: fixed;
-  bottom: 0;
 }
 
 
@@ -58,7 +56,7 @@ footer {
 h1 {
   padding-top: 10px;
   font-size: 50px;
-  grid-column: 2/3;
+  grid-column: 2;
   grid-row: 1;
 }
 
@@ -138,31 +136,39 @@ td {
   align-items: center;
 }
 /* ----------------------------------------Class----------------------------------- */
-
-.textoFooter {
-  text-align: center;
+.gridPrueba{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
 }
-
 .imgUno {
-  width: 80%;
-  height: 80%;
-}
-
-.columna1 {
-  padding-left: 20px;
-  align-content: center; 
-  text-align: center;
+  width: 70%;
+  height: 70%;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .imgDos {
-  width: 80%;
-  height: 80%;
-  justify-items:  center;
+  width: 70%;
+  height: 70%;
+  grid-column: 2;
+  grid-row: 2;
 }
 
-.columna2 {
-  padding-left: 20px;
-  align-content: center;  
+.pUno{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.pDos{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.textoFooter {
+  text-align: center;
 }
 
 .imgUnoT {
@@ -302,14 +308,6 @@ td {
     align-content: center;
   }
   /* ----------------------------------------Class----------------------------------- */
-  .tablaDuo {
-    display: grid;
-    grid-template-rows: 1fr repeat(4);
-    grid-template-columns: 1fr;
-    gap: 5%;
-    align-items: center;
-  }
-
   .imgUno {
     width: 80%;
     height: 80%;
