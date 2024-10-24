@@ -1,288 +1,287 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Poppins;
-  }
-  
-  @font-face {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: Poppins;
+}
+
+@font-face {
     font-family: "Poppins";
     src: url(../css/fonts/Poppins-Bold.ttf);
-  }
-  
-  /* ---------------------------------Estructuras Basicas--------------------------- */
-  html,
-  body {
-    height: 100%;
-    width: 100%;
-  }
-  
-  header {
-    width: 100%;
+}
+
+/* ---------------------------------Estructuras Basicas--------------------------- */
+html,
+body {
+height: 100%;
+width: 100%;
+}
+
+header {
+width: 100%;
+background-color: #0e8388;
+text-align: center;
+}
+
+body {
+background-color: #2c3333;
+}
+
+nav {
+background-color: white;
+display: flex;
+width: 100%;
+margin: 0 auto;
+position: sticky;
+top: 0;
+}
+
+main {
+background-color: #cbe4de;
+height: 90vh;
+width: 60%;
+margin: 0px auto;
+}
+
+footer {
+background-color: #0e8388;
+width: 100%;
+height: 80px;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+h1 {
+padding-top: 10px;
+font-size: 50px;
+grid-column: 2;
+grid-row: 1;
+}
+
+h2 {
+font-size: 35px;
+text-align: center;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+ul {
+text-align: center;
+width: 100%;
+height: 100%;
+list-style: none;
+display: block;
+padding: 18px;
+}
+
+li {
+display: inline;
+margin: auto;
+}
+
+a {
+display: inline-block;
+color: black;
+text-decoration: none;
+padding-left: 30px;
+padding-right: 30px;
+transition: transform 0.3s ease, background-color 0.3s ease;
+
+&:hover {
+    transform: scale(1.1);
     background-color: #0e8388;
-    text-align: center;
-  }
-  
-  body {
-    background-color: #2c3333;
-  }
-  
-  nav {
-    background-color: white;
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
-    position: sticky;
-    top: 0;
-  }
-  
-  main {
+}
+}
+
+form {
+width: 300px;
+margin: auto;
+text-align: center;
+padding-bottom: 5%;
+}
+
+label,
+input,
+textarea {
+display: block;
+margin: 0 auto;
+margin-bottom: 10px;
+text-align: center;
+}
+
+table {
+width: 80%;
+height: 70%;
+margin: 0 auto;
+margin-top: 4%;
+padding-bottom: 5%;
+}
+
+td {
+width: 100%;
+height: 100%;
+font-size: 13px;
+align-items: center;
+}
+
+/* ----------------------------------------Class----------------------------------- */
+.gridPrueba {
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+align-items: center;
+justify-items: center;
+}
+
+.imgUno,
+.imgDos {
+width: 70%;
+height: 70%;
+}
+
+.imgUno {
+grid-column: 1;
+grid-row: 1;
+}
+
+.imgDos {
+grid-column: 2;
+grid-row: 2;
+}
+
+.pUno {
+grid-column: 1;
+grid-row: 2;
+}
+
+.pDos {
+grid-column: 2;
+grid-row: 1;
+}
+
+.textoFooter {
+text-align: center;
+}
+
+.imgUnoT,
+.imgDosT,
+.imgTresT {
+width: 30%;
+height: 30%;
+justify-items: center;
+}
+
+.columna1T,
+.columna2T,
+.columna3T {
+padding-left: 20px;
+align-content: center;
+text-align: center;
+}
+
+.imgCuatro {
+width: 30%;
+height: 30%;
+margin: auto;
+padding-left: 50px;
+}
+
+.imagenTraza {
+width: 30%;
+height: 90%;
+margin: 5px;
+grid-column: 1;
+grid-row: 1;
+}
+
+.imgPie1,
+.imgPie2,
+.imgPie3 {
+width: 50%;
+height: 80%;
+}
+
+.pie1,
+.pie2,
+.pie3 {
+grid-column: 2;
+grid-row: 1;
+}
+
+.prueba {
+max-width: 100%;
+display: grid;
+grid-template-rows: 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+}
+
+.miHeader {
+width: 100%;
+background-color: #0e8388;
+text-align: center;
+}
+
+/* -----------------------------------------ID's----------------------------------- */
+#textoMain {
+text-align: center;
+margin-top: 5%;
+padding-left: 20%;
+padding-right: 20%;
+padding-bottom: 5%;
+}
+
+#verificaR {
+display: flex;
+flex-direction: row wrap;
+padding-bottom: 5%;
+}
+
+/* ------------------------------------Mediaqueries----------------------------------- */
+@media screen and (max-width: 320px) {
+/* ---------------------------------Estructuras Basicas--------------------------- */
+main {
     background-color: #cbe4de;
-    height: 90vh;
-    width: 60%;
-    margin: 0px auto;
-  }
-  
-  footer {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
     background-color: #0e8388;
     width: 100%;
-    height: 80px;
-  }
-  
-  /* ------------------------------------------------------------------------------- */
-  
-  h1 {
-    padding-top: 10px;
-    font-size: 50px;
-    grid-column: 2;
-    grid-row: 1;
-  }
-  
-  h2 {
-    font-size: 35px;
-    text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  
-  ul {
-    text-align: center;
+}
+
+ul {
     width: 100%;
     height: 100%;
-    list-style: none;
-    display: block;
-    padding: 18px;
-  }
-  
-  li {
-    display: inline;
-    margin: auto;
-  }
-  
-  a {
-    display: inline-block;
-    color: black;
-    text-decoration: none;
-    padding-left: 30px;
-    padding-right: 30px;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  
-    &:hover {
-      transform: scale(1.1);
-      background-color: #0e8388;
-    }
-  }
-  
-  form {
-    width: 300px;
-    margin: auto;
-    text-align: center;
-    padding-bottom: 5%;
-  }
-  
-  label,
-  input,
-  textarea {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  table {
-    width: 80%;
-    height: 70%;
-    margin: 0 auto;
-    margin-top: 4%;
-    padding-bottom: 5%;
-  }
-  
-  td {
-    width: 100%;
-    height: 100%;
-    font-size: 13px;
-    align-items: center;
-  }
-  
-  /* ----------------------------------------Class----------------------------------- */
-  .gridPrueba {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr repeat(4);
     align-items: center;
-    justify-items: center;
-  }
-  
-  .imgUno,
-  .imgDos {
-    width: 70%;
-    height: 70%;
-  }
-  
-  .imgUno {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  
-  .imgDos {
-    grid-column: 2;
-    grid-row: 2;
-  }
-  
-  .pUno {
-    grid-column: 1;
-    grid-row: 2;
-  }
-  
-  .pDos {
-    grid-column: 2;
-    grid-row: 1;
-  }
-  
-  .textoFooter {
-    text-align: center;
-  }
-  
-  .imgUnoT,
-  .imgDosT,
-  .imgTresT {
-    width: 30%;
-    height: 30%;
-    justify-items: center;
-  }
-  
-  .columna1T,
-  .columna2T,
-  .columna3T {
-    padding-left: 20px;
     align-content: center;
-    text-align: center;
-  }
-  
-  .imgCuatro {
-    width: 30%;
-    height: 30%;
-    margin: auto;
-    padding-left: 50px;
-  }
-  
-  .imagenTraza {
-    width: 30%;
-    height: 90%;
-    margin: 5px;
-    grid-column: 1;
-    grid-row: 1;
-  }
-  
-  .imgPie1,
-  .imgPie2,
-  .imgPie3 {
-    width: 50%;
+}
+
+/* ----------------------------------------Class----------------------------------- */
+.imgUno {
+    width: 80%;
     height: 80%;
-  }
-  
-  .pie1,
-  .pie2,
-  .pie3 {
-    grid-column: 2;
     grid-row: 1;
-  }
-  
-  .prueba {
-    max-width: 100%;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  
-  .miHeader {
-    width: 100%;
-    background-color: #0e8388;
-    text-align: center;
-  }
-  
-  /* -----------------------------------------ID's----------------------------------- */
-  #textoMain {
-    text-align: center;
-    margin-top: 5%;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 5%;
-  }
-  
-  #verificaR {
-    display: flex;
-    flex-direction: row wrap;
-    padding-bottom: 5%;
-  }
-  
-  /* ------------------------------------Mediaqueries----------------------------------- */
-  @media screen and (max-width: 320px) {
-    /* ---------------------------------Estructuras Basicas--------------------------- */
-    main {
-      background-color: #cbe4de;
-      width: 100%;
-      height: 100%;
-    }
-  
-    footer {
-      background-color: #0e8388;
-      width: 100%;
-    }
-  
-    ul {
-      width: 100%;
-      height: 100%;
-      display: grid;
-      grid-template-rows: 1fr repeat(4);
-      align-items: center;
-      align-content: center;
-    }
-  
-    /* ----------------------------------------Class----------------------------------- */
-    .imgUno {
-      width: 80%;
-      height: 80%;
-      grid-row: 1;
-      justify-items: center;
-    }
-  
-    .columna1 {
-      padding-left: 20px;
-      grid-row: 2;
-      align-content: center;
-    }
-  
-    .imgDos {
-      width: 90%;
-      height: 90%;
-      grid-row: 3;
-    }
-  
-    .columna2 {
-      padding-left: 20px;
-      grid-row: 4;
-      align-content: center;
-    }
-  }
-  
+    justify-items: center;
+}
+
+.columna1 {
+    padding-left: 20px;
+    grid-row: 2;
+    align-content: center;
+}
+
+.imgDos {
+    width: 90%;
+    height: 90%;
+    grid-row: 3;
+}
+
+.columna2 {
+    padding-left: 20px;
+    grid-row: 4;
+    align-content: center;
+}
+}
