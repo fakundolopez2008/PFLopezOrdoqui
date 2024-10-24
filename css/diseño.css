@@ -134,16 +134,25 @@ td {
 
 .divFooter {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 1fr 1fr; }
 
-.textoImg {
-  text-align: center;
+.textoImg1 {
+  text-align: left;
+  font-size: 12px;
+  padding: 3px;
+  grid-column: 2; }
+
+.textoImg2 {
+  text-align: left;
+  font-size: 12px;
+  padding: 3px;
   grid-column: 2; }
 
 .textoFooter {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
   text-align: center;
-  justify-content: center;
   grid-column: 2; }
 
 .imgFooter {
