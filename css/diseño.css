@@ -9,8 +9,7 @@
   src: url(../css/fonts/Poppins-Bold.ttf); }
 
 /* ---------------------------------Estructuras Basicas--------------------------- */
-html,
-body {
+html, body {
   height: 100%;
   width: 100%; }
 
@@ -83,9 +82,7 @@ form {
   text-align: center;
   padding-bottom: 5%; }
 
-label,
-input,
-textarea {
+label, input, textarea {
   display: block;
   margin: 0 auto;
   margin-bottom: 10px;
@@ -112,8 +109,7 @@ td {
   align-items: center;
   justify-items: center; }
 
-.imgUno,
-.imgDos {
+.imgUno, .imgDos {
   width: 70%;
   height: 70%; }
 
@@ -136,16 +132,12 @@ td {
 .textoFooter {
   text-align: center; }
 
-.imgUnoT,
-.imgDosT,
-.imgTresT {
+.imgUnoT, .imgDosT, .imgTresT {
   width: 30%;
   height: 30%;
   justify-items: center; }
 
-.columna1T,
-.columna2T,
-.columna3T {
+.columna1T, .columna2T, .columna3T {
   padding-left: 20px;
   align-content: center;
   text-align: center; }
@@ -163,15 +155,11 @@ td {
   grid-column: 1;
   grid-row: 1; }
 
-.imgPie1,
-.imgPie2,
-.imgPie3 {
+.imgPie1, .imgPie2, .imgPie3 {
   width: 50%;
   height: 80%; }
 
-.pie1,
-.pie2,
-.pie3 {
+.pie1, .pie2, .pie3 {
   grid-column: 2;
   grid-row: 1; }
 
