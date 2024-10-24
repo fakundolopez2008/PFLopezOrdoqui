@@ -28,11 +28,10 @@ body {
 
 nav {
     background-color: white;
+    border-style: solid;
     display: flex;
     width: 100%;
     margin: 0 auto;
-    position: sticky;
-    top: 0;
 }
 
 main {
@@ -45,7 +44,9 @@ main {
 footer {
     background-color: #0e8388;
     width: 100%;
-    height: 80px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* ------------------------------------------------------------------------------- */
@@ -148,15 +149,37 @@ grid-row: 1;
 .pUno {
     grid-column: 1;
     grid-row: 2;
+    padding-left: 50px;
 }
 
 .pDos {
     grid-column: 2;
     grid-row: 1;
+    padding-right: 50px;
+}
+
+.divFooter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.textoImg {
+    text-align: center;
+    grid-column: 2;
 }
 
 .textoFooter {
     text-align: center;
+    justify-content: center;
+    grid-column: 2;
+}
+
+.imgFooter{
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    grid-column: 1;
 }
 
 .imgUnoT,.imgDosT,.imgTresT {
@@ -226,51 +249,51 @@ grid-row: 1;
 
 /* ------------------------------------Mediaqueries----------------------------------- */
 @media screen and (max-width: 320px) {
-    
+
 /* ---------------------------------Estructuras Basicas--------------------------- */
-main {
-    background-color: #cbe4de;
-    width: 100%;
-    height: 100%;
-}
+    main {
+        background-color: #cbe4de;
+        width: 100%;
+        height: 100%;
+    }
 
-footer {
-    background-color: #0e8388;
-    width: 100%;
-}
+    footer {
+        background-color: #0e8388;
+        width: 100%;
+    }
 
-ul {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-rows: 1fr repeat(4);
-    align-items: center;
-    align-content: center;
-}
+    ul {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 1fr repeat(4);
+        align-items: center;
+        align-content: center;
+    }
 
 /* ----------------------------------------Class----------------------------------- */
-.imgUno {
-    width: 80%;
-    height: 80%;
-    grid-row: 1;
-    justify-items: center;
-}
+    .imgUno {
+        width: 80%;
+        height: 80%;
+        grid-row: 1;
+        justify-items: center;
+    }
 
-.columna1 {
-    padding-left: 20px;
-    grid-row: 2;
-    align-content: center;
-}
+    .columna1 {
+        padding-left: 20px;
+        grid-row: 2;
+        align-content: center;
+    }
 
-.imgDos {
-    width: 90%;
-    height: 90%;
-    grid-row: 3;
-}
+    .imgDos {
+        width: 90%;
+        height: 90%;
+        grid-row: 3;
+    }
 
-.columna2 {
-    padding-left: 20px;
-    grid-row: 4;
-    align-content: center;
-}
+    .columna2 {
+        padding-left: 20px;
+        grid-row: 4;
+        align-content: center;
+    }
 }

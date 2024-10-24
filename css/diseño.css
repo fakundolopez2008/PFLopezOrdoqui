@@ -23,11 +23,10 @@ body {
 
 nav {
   background-color: white;
+  border-style: solid;
   display: flex;
   width: 100%;
-  margin: 0 auto;
-  position: sticky;
-  top: 0; }
+  margin: 0 auto; }
 
 main {
   background-color: #cbe4de;
@@ -38,7 +37,9 @@ main {
 footer {
   background-color: #0e8388;
   width: 100%;
-  height: 80px; }
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
 
 /* ------------------------------------------------------------------------------- */
 h1 {
@@ -123,14 +124,33 @@ td {
 
 .pUno {
   grid-column: 1;
-  grid-row: 2; }
+  grid-row: 2;
+  padding-left: 50px; }
 
 .pDos {
   grid-column: 2;
-  grid-row: 1; }
+  grid-row: 1;
+  padding-right: 50px; }
+
+.divFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; }
+
+.textoImg {
+  text-align: center;
+  grid-column: 2; }
 
 .textoFooter {
-  text-align: center; }
+  text-align: center;
+  justify-content: center;
+  grid-column: 2; }
+
+.imgFooter {
+  padding: 3px;
+  height: 30px;
+  width: 30px;
+  grid-column: 1; }
 
 .imgUnoT, .imgDosT, .imgTresT {
   width: 30%;
