@@ -1,0 +1,34 @@
+.gridPrueba {
+    @include grid (2,2);
+    align-items: center;
+    justify-items: center;
+}
+
+.imgUno,.imgDos {
+    width: 50%;
+    height: 60%;
+}
+
+.imgUno {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.imgDos {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.pUno {
+    text-align: justify;
+    grid-column: 1;
+    grid-row: 2;
+    padding-left: 50px;
+}
+
+.pDos {
+    text-align: justify;
+    grid-column: 2;
+    grid-row: 1;
+    padding-right: 50px;
+}

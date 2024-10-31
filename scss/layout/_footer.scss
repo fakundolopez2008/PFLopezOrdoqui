@@ -1,0 +1,28 @@
+footer {
+    background-color: #0e8388;
+    width: 100%;
+    height: auto;
+    @include grid (3,0);
+}
+
+.divFooter{
+    @include grid (7,2);
+}
+
+.imgFooter{
+    padding: 3px;
+    height: 30px;
+    width: 30px;
+    grid-column: 1;
+}
+
+.textoImg {
+    font-size: 11px;
+}
+
+.textoFooter {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    text-align: center;
+    grid-column: 2;
+}

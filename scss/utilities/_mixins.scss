@@ -1,0 +1,19 @@
+@mixin flex ($direction,$justify,$align){
+
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-content: $align;
+}
+
+@mixin grid($col: 0, $rows: 0) {
+
+    display: grid;
+    @if $col > 0 {
+        grid-template-columns: repeat($col, 1fr);
+        
+    @if $rows > 0 {
+        grid-template-rows: repeat($rows, 1fr);
+    }
+    }
+}

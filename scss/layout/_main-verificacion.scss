@@ -1,0 +1,22 @@
+.gridPrueba {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.imgCuatro {
+    width: 30%;
+    height: 30%;
+    margin: auto;
+    padding-left: 50px;
+}
+
+#verificaR {
+    //@include flex (row wrap, center, center);
+    display: flex;
+    flex-direction: row wrap;
+    padding-bottom: 5%;
+    margin-top: 4%;
+}

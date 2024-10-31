@@ -1,0 +1,112 @@
+@media screen and (max-width: 320px) {
+
+/* ---------------------------------Estructuras Basicas--------------------------- */
+    h1 {
+        padding-top: 10px;
+        font-size: 30px;
+    }
+    main {
+        background-color: #cbe4de;
+        height: auto;
+    }
+
+    footer {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        background-color: #0e8388;
+        width: 100%;
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    ul {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        align-content: center;
+    }
+
+    a{
+        display: block;
+
+        &:hover {
+            transform: unset;
+            background-color: unset;
+        }
+    }
+
+/* ----------------------------------------Class----------------------------------- */
+    .prueba {
+    max-width: 100%;
+    }
+
+    .divMain {
+        width: 100%;
+    }
+
+    .imgUno {
+        width: 80%;
+        height: 80%;
+        grid-row: 1;
+        justify-items: center;
+    }
+
+    .columna1 {
+        padding-left: 20px;
+        grid-row: 2;
+        align-content: center;
+    }
+
+    .imgDos {
+        width: 90%;
+        height: 90%;
+        grid-row: 3;
+    }
+
+    .columna2 {
+        padding-left: 20px;
+        grid-row: 4;
+        align-content: center;
+    }
+    
+    .divFooter{
+        grid-row: 2;
+    }
+
+    .textoImg {
+        font-size: 11px;
+    }
+
+    .imgCuatro {
+        width: 60%;
+        height: 60%;
+        padding-left: 5px;
+        grid-row: 2;
+    }
+    .imagenTraza{
+        width: 80%;
+    }
+    .imgUnoT,.imgDosT,.imgTresT {
+        width: 100%;
+        height: 100%;
+    }
+    .columna1T,.columna2T,.columna3T {
+        font-size: small;
+        align-content: center;
+        text-align: center;
+    }
+    
+    .textoImg {
+        text-align: center;
+        grid-column: 4;
+    }
+
+/* -----------------------------------------ID's----------------------------------- */
+
+    #textoMain {
+        font-size: 12px;
+    }
+    #verificaR {
+        @include grid (0,2);
+    }
+}
