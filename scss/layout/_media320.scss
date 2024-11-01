@@ -5,6 +5,11 @@
         padding-top: 10px;
         font-size: 30px;
     }
+
+    h2 {
+        font-size: 25px;
+    }
+    
     main {
         background-color: #cbe4de;
         height: auto;
@@ -12,11 +17,8 @@
 
     footer {
         display: block;
-        position: fixed;
-        bottom: 0;
         background-color: #0e8388;
         width: 100%;
-        grid-template-rows: repeat(2,1fr);
     }
 
     ul {
@@ -42,31 +44,6 @@
 
     .divMain {
         width: 100%;
-    }
-
-    .imgUno {
-        width: 80%;
-        height: 80%;
-        grid-row: 1;
-        justify-items: center;
-    }
-
-    .columna1 {
-        padding-left: 20px;
-        grid-row: 2;
-        align-content: center;
-    }
-
-    .imgDos {
-        width: 90%;
-        height: 90%;
-        grid-row: 3;
-    }
-
-    .columna2 {
-        padding-left: 20px;
-        grid-row: 4;
-        align-content: center;
     }
     
     .divFooter{
@@ -99,6 +76,37 @@
     .textoImg {
         text-align: center;
         grid-column: 4;
+        padding-top: 3%;
+    }
+
+    .textoFooter {
+        padding-top: 3%;
+    }
+
+    .gridPrueba {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .imgUno,.imgDos {
+        width: 60%;
+        height: 50%;
+        margin: 40px 40px;
+    }
+    
+    .pUno {
+        font-size: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .pDos {
+        font-size: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5%;
     }
 
 /* -----------------------------------------ID's----------------------------------- */

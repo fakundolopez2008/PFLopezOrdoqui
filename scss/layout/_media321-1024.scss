@@ -1,16 +1,34 @@
 @media screen and (min-width: 321px) and (max-width: 1024px) {
 
     /* ---------------------------------Estructuras Basicas--------------------------- */ 
+        footer {
+            @include grid (2,0);
+        }
+
         ul {
             text-align: center;
             width: 100%;
-            height: 100%;
             list-style: none;
             display: block;
             padding: 8px;
-        }
+        
+            a{
+                font-size: 80%;
+                &:hover {
+                    transform: unset;
+                    background-color: unset;
+                }
+            }
+        }    
     /* ----------------------------------------Class----------------------------------- */    
         .imagenTraza{
             width: 40%;
+        }
+
+        .textoFooter {
+            padding-top: 3%;
+        }
+        .textoImg {
+            padding-top: 3%;
         }
     }

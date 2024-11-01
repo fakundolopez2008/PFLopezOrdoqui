@@ -11,9 +11,8 @@
     display: grid;
     @if $col > 0 {
         grid-template-columns: repeat($col, 1fr);
-        
+    }
     @if $rows > 0 {
         grid-template-rows: repeat($rows, 1fr);
-    }
     }
 }
