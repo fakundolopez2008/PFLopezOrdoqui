@@ -79,10 +79,6 @@
         padding-top: 3%;
     }
 
-    .textoFooter {
-        padding-top: 3%;
-    }
-
     .gridPrueba {
         display: flex;
         flex-direction: column;
@@ -107,6 +103,9 @@
         padding-left: 5px;
         padding-right: 5px;
         padding-bottom: 5%;
+    }
+    .imagenTrazaF {
+        display: none;
     }
 
 /* -----------------------------------------ID's----------------------------------- */

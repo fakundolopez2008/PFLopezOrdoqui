@@ -2,6 +2,7 @@ footer {
     background-color: #0e8388;
     width: 100%;
     height: auto;
+    border-style: solid;
     @include grid (3,0);
 }
 
@@ -17,6 +18,7 @@ footer {
 }
 
 .textoImg {
+    padding-top: 3%;
     font-size: 11px;
 }
 
@@ -24,6 +26,16 @@ footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     text-align: center;
-    align-items: center;
+    justify-self: center;
+    align-self: center;
     grid-column: 2;
+}
+
+.imagenTrazaF {
+    width: 12%;
+    height: 80%;
+    grid-column: 3; 
+    justify-self: end;
+    align-self: center;
+    margin-right: 2%;
 }
