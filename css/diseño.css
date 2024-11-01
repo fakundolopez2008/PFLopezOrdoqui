@@ -51,7 +51,9 @@ footer {
 
 .textoImg {
   padding-top: 3%;
-  font-size: 11px; }
+  font-size: 11px;
+  justify-self: left;
+  align-self: left; }
 
 .textoFooter {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -121,7 +123,7 @@ form {
   width: 300px;
   margin: auto;
   text-align: center;
-  padding-bottom: 5%; }
+  padding-bottom: 10%; }
 
 label, input, textarea {
   display: block;
@@ -134,7 +136,7 @@ label, input, textarea {
   margin-top: 6%;
   padding-left: 20%;
   padding-right: 20%;
-  padding-bottom: 5%; }
+  padding-bottom: 18%; }
 
 .gridPrueba {
   display: grid;
