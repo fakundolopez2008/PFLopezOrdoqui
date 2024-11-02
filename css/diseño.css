@@ -27,8 +27,8 @@ h2 {
   padding-bottom: 30px; }
 
 @font-face {
-  font-family: "Poppins";
-  src: url(../../css/fonts/Poppins-Bold.ttf); }
+  font-family: 'Poppins','San Serif';
+  src: url(./css/fonts/Poppins-Bold.ttf); }
 
 footer {
   background-color: #0e8388;
