@@ -1,6 +1,7 @@
 header {
     width: 100%;
-    background-color: #0e8388;
+    background-image: url('../assets/HEADER.jpg');
+    background-size: 100% 70%;
     text-align: center;
 }
 
@@ -10,9 +11,12 @@ header {
 }
 
 .imagenTraza {
-    width: 30%;
+    width: 40%;
     height: 90%;
-    margin: 5px;
-    grid-column: 1;
+    padding: 1%;
+    border-radius: 30px;
+    grid-column: 3;
     grid-row: 1;
+    justify-self: left;
+    align-self: center;
 }
