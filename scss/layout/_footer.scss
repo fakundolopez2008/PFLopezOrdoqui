@@ -1,10 +1,10 @@
 footer {
-    background-image: url('../assets/FOOTER.jpg');
-    background-size: 100% 70%;
-    width: 100%;
+    background: linear-gradient(#cbe4de,#6ff0d2,#0e8388);
+    margin: 0px auto;
+    width: 80%;
     height: auto;
-    border-style: solid;
     @include grid (3,0);
+    box-shadow: 0px 10px 0px 10px #0e8388;
 }
 
 .divFooter{
