@@ -1,7 +1,10 @@
+form {
+    margin-top: 10%;
+}
+
 .gridPrueba {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    @include grid (2,2);
     align-items: center;
     justify-items: center;
 }
@@ -9,13 +12,12 @@
 .imgCuatro {
     width: 30%;
     height: 30%;
-    margin: auto;
+    margin-top: 8%;
+    margin-left: 20%;
     padding-left: 50px;
 }
 
 #verificaR {
     display: flex;
     flex-direction: row wrap;
-    padding-bottom: 5%;
-    margin-top: 4%;
 }
