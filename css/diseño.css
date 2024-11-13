@@ -332,7 +332,8 @@ ul {
     align-items: center;
     align-content: center; }
   a {
-    display: block; }
+    display: block;
+    width: 100%; }
     a:hover {
       transform: unset;
       background-color: unset; }
@@ -367,7 +368,8 @@ ul {
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: center; }
+    justify-content: center;
+    padding-bottom: 5%; }
   .imgUno, .imgDos {
     width: 60%;
     height: 50%;
@@ -383,12 +385,27 @@ ul {
     padding-bottom: 5%; }
   .imagenTrazaF {
     display: none; }
+  .gridEntes {
+    padding-left: 0%;
+    padding-right: 0%; }
+  .entesReguladores {
+    height: 70px;
+    width: 75px;
+    margin: auto;
+    border-radius: 30px; }
+  .tdClientes {
+    pointer-events: none; }
   /* -----------------------------------------ID's----------------------------------- */
   #textoMain {
     font-size: 12px; }
   #verificaR {
     display: grid;
-    grid-template-rows: repeat(2, 1fr); } }
+    grid-template-rows: repeat(2, 1fr); }
+  #textoSection {
+    border-radius: 8px;
+    font-size: 10px;
+    margin-left: 10%;
+    margin-right: 10%; } }
 
 @media screen and (min-width: 321px) and (max-width: 1024px) {
   /* ---------------------------------Estructuras Basicas--------------------------- */
